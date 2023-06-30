@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talk 2 Idols</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .vid {
+        width: 300px;
+        height: 530px;
+        text-align: center;
+      }
+      .vid video {
+        width: 100%;
+        height: 100%;
+      }
+      .text-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .vid {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="animation"></canvas>
+     <h1>talk2idols</h1>
+    <div class="container">
+      <div class="vid" id="vid">
+        <video controls autoplay loop muted>
+          <source src="vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text-container">
+        <li style="background-color: transparent; color: #adaaa6; text-align: left;">
+    voice enabled GPT-3.5 AI chatbot<br> with speech recognition and speech<br> synthesis for natural conversation
+        </li>
+        <p><li style="background-color: transparent; color: #adaaa6; text-align: left;">
+     experience the power of natural<br> voice conversation with your favorite<br> famous persona or fictional character
+        </li></p>
+        <p><li style="background-color: transparent; color: #adaaa6; text-align: left;">
+    custom memmory helps the bot<br> to remember all the details of the<br> conversation and can engage in<br> realistic conversation without<br> forgetting the context.
+
+        </li></p>
+        <p><li style="background-color: transparent; color: #adaaa6;text-align: left;">
+    internet access enabled through<br> custom google search engine for<br> searching current events
+        </li></p><div id="store"><a href="https://play.google.com/store/apps/details?id=your_app_package_name">
+        <img src="google-play-badge.svg" alt="Get it on Google Play" width="140">
+      </a></div>
+      </div>
+    </div>    
+    <!-- Privacy button -->
+    <button id="privacy-button"><a href="privacy.html">Privacy Policy - Features</a></button>
+    <script src="./animation.js"></script>
+  </body>
+</html>
